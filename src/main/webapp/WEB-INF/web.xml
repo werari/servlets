@@ -6,7 +6,7 @@
 
     <servlet-mapping>
         <servlet-name>HomeServlet</servlet-name>
-        <url-pattern>/hello-world</url-pattern>
+        <url-pattern>/hello-world, /</url-pattern>
     </servlet-mapping>
     <servlet>
         <servlet-name>CalculatorServlet</servlet-name>
@@ -17,13 +17,73 @@
         <servlet-name>CalculatorServlet</servlet-name>
         <url-pattern>/calculator</url-pattern>
     </servlet-mapping>
+
     <servlet>
-        <servlet-name>MyServlets</servlet-name>
-        <servlet-class>servlets.MyServlets</servlet-class>
+        <servlet-name>LinksServlet</servlet-name>
+        <servlet-class>links.LinksServlet</servlet-class>
     </servlet>
 
     <servlet-mapping>
-        <servlet-name>MyServlets</servlet-name>
+        <servlet-name>LinksServlet</servlet-name>
         <url-pattern>/link</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>UsersServlet</servlet-name>
+        <servlet-class>users.UsersServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>UsersServlet</servlet-name>
+        <url-pattern>/user</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>UserServlet</servlet-name>
+        <servlet-class>users.UserServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>UserServlet</servlet-name>
+        <url-pattern>/user/*</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>LinkServlet</servlet-name>
+        <servlet-class>links.LinkServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>LinkServlet</servlet-name>
+        <url-pattern>/link/*</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>TestServlet</servlet-name>
+        <servlet-class>servlets.TestServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>TestServlet</servlet-name>
+        <url-pattern>/test</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>HelloServlet</servlet-name>
+        <jsp-file>/hello.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>HelloServlet</servlet-name>
+        <url-pattern>/hello</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SurveyServlet</servlet-name>
+        <jsp-file>/survey/surveys.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>SurveyServlet</servlet-name>
+        <url-pattern>/surveys</url-pattern>
     </servlet-mapping>
 </web-app>

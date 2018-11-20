@@ -6,3 +6,21 @@ ${message}<br/>
 <c:forEach items="${names}" var="name">
     ${name}<br/>
 </c:forEach>
+
+<a href="${url}">
+    ${text}
+</a>
+
+<c:if test="${age gt 18}">
+    <h4>Jesteś pelnoletni</h4>
+</c:if>
+<c:if test="${age lt 18}">
+    <h4>Małolat</h4>
+</c:if>
+
+<c:if test="${age2 gt 18}">
+    <h4>Jesteś pelnoletni</h4>
+</c:if>
+<c:if test="${age2 lt 18}">
+    <h4>Małolat</h4>
+</c:if>
